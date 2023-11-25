@@ -104,6 +104,7 @@ gap: 40px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-address {
@@ -146,12 +147,31 @@ color: var(--SLATE, #434455);
 color: #404BBF;
 }
 
+/* .menu-link::after {
+content: '';
+width: 48px;
+    height: 4px;
+border-radius: 2px;
+    background: var(--OCEAN, #404BBF);
+} */
+
 /* TITLE */
 
 .section-one {
 padding: 188px 0;
-background-color: var(--NAVY-BLUE, #2E2F42);;
+background: #2E2F42;
 }
+
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
+url(../images/hero/people-office.jpg);
+background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 .heading-main {
 color: var(--WHITE, #FFF);
@@ -176,7 +196,7 @@ color: var(--WHITE, #FFF);
         margin-top: 48px;
         align-items: flex-start;
         border-radius: 4px;
-        background: var(--IRIS, #4D5AE5);
+        /* background: var(--IRIS, #4D5AE5); */
         border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -184,12 +204,12 @@ color: var(--WHITE, #FFF);
     letter-spacing: 0.04em;
     color: #ffffff;
     background-color: var(--IRIS, #4D5AE5);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-button:hover,
 .title-button:focus {
 background-color: var(--OCEAN, #404BBF);
-display: block;
 }
 
 /* ADVANTAGES */
@@ -208,6 +228,27 @@ gap: 24px;
 width: calc((100% - 72px) / 4); 
 }
 
+.section-two-icon {
+width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background-color: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+/* .logo-advantages {
+width: 264px;
+height: 112px;
+padding: 24px 100px;
+border-radius: 4px;
+border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+background: var(--CLOUD, #F4F4FD);
+} */
+
 /* !!!!!!!!!!!!!! */
 .heading-advantages {
 color: var(--NAVY-BLUE, #2E2F42);
@@ -216,7 +257,7 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 margin: 0;
-margin-bottom: 8px
+margin-bottom: 8px;
 }
 
 .paragraph-advantages {
@@ -237,6 +278,7 @@ background-color: #F4F4FD;
 
 .our-team-list {
 display: flex;
+justify-content: center;
 gap: 24px;
 }
 
@@ -281,6 +323,28 @@ letter-spacing: 0.02em;
 
 .section-three-item-text {
 padding: 32px 0;
+}
+
+.icon-team-list {
+    display: flex;
+    justify-content: center;
+    gap:24px;
+}
+
+.social-links-team {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background-color: #4D5AE5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-team-items {
+width: 40px;
+height: 40px;
 }
 
 /* OUR PORTFOLIO */
@@ -341,6 +405,14 @@ background: var(--NAVY-BLUE, #2E2F42);
 padding: 100px 0;
 }
 
+.container-footer {
+display: flex;
+align-items: baseline;
+}
+
+.logo-footer-div {
+margin-right: 120px;
+}
 .logotype-footer {
 color: var(--IRIS, #4D5AE5);
     font-family: 'Raleway', sans-serif;
@@ -366,3 +438,53 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 max-width: 264px;
 }
+
+.footer-heading {
+color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-list {
+display: flex;
+justify-content: space-evenly;
+gap: 16px;
+}
+
+/* .section-footer-list-item {
+width: calc((100% - 48px) / 4);
+} */
+
+.icon {
+fill: #f4f4fd;
+
+}
+
+.footer-heading {
+margin-bottom: 16px;
+}
+
+.section-footer-list-item {
+width: 40px;
+height: 40px;
+}
+
+.social-links-footer {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background-color: #4D5AE5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list .social-links-footer:hover,
+.footer-list .social-links-footer:focus {
+ background-color: #31D0AA; 
+}
+
